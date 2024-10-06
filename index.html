@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -20,36 +19,40 @@
     </div>
     <hr>
 
+    <!-- Кнопки для вибору лабораторних робіт -->
     <div class="lab-buttons">
-        <button><a href="/lab1/lab1.html" target="content-frame">Лабораторна робота №1</a></button>
-        <button><a href="/lab2/lab2.html" target="content-frame">Лабораторна робота №2</a></button>
-        <button><a href="/lab3/lab3.html" target="content-frame">Лабораторна робота №3</a></button>
-        <button><a href="/lab4/lab4.html" target="content-frame">Лабораторна робота №4</a></button>
-        <button><a href="/lab5/lab5.html" target="content-frame">Лабораторна робота №5</a></button>
-        <button><a href="/lab6/lab6.html" target="content-frame">Лабораторна робота №6</a></button>
-        <button><a href="/lab7/lab7.html" target="content-frame">Лабораторна робота №7</a></button>
-        <button><a href="/lab8/lab8.html" target="content-frame">Лабораторна робота №8</a></button>
-        <button><a href="/lab9/lab9.html" target="content-frame">Лабораторна робота №9</a></button>
+        <button onclick="loadLab(1)">Лабораторна робота №1</button>
+        <button onclick="loadLab(2)">Лабораторна робота №2</button>
+        <button onclick="loadLab(3)">Лабораторна робота №3</button>
+        <button onclick="loadLab(4)">Лабораторна робота №4</button>
+        <button onclick="loadLab(5)">Лабораторна робота №5</button>
+        <button onclick="loadLab(6)">Лабораторна робота №6</button>
+        <button onclick="loadLab(7)">Лабораторна робота №7</button>
+        <button onclick="loadLab(8)">Лабораторна робота №8</button>
+        <button onclick="loadLab(9)">Лабораторна робота №9</button>
     </div>
 
     <div class="content">
-        <div class="left-menu">
+        <!-- Ліва панель, де змінюються кнопки -->
+        <div class="left-menu" id="left-menu">
+            <!-- Початковий вміст для Лабораторної роботи №1 -->
             <button><a href="/lab1/description.html" target="content-frame">Опис предметного середовища</a></button>
             <button><a href="/lab1/topic.html" target="content-frame">Тема Мета Місце розташування </a></button>
             <button><a href="/lab1/structure.html" target="content-frame">СТРУКТУРА ДОКУМЕНТА</a></button>
             <button><a href="/lab1/table.html" target="content-frame">HTML-код ТАБЛИЦІ</a></button>
             <button><a href="/lab1/form.html" target="content-frame">HTML-код ФОРМИ</a></button>
             <button><a href="/lab1/images.html" target="content-frame">HTML-код ЗОБРАЖЕННЯ</a></button>
-            <button><a href="/lab1/conclusion.html" target="content-frame">ВИСНОВКИ</a></button>            
+            <button><a href="/lab1/conclusion.html" target="content-frame">ВИСНОВКИ</a></button>  
         </div>
         
-        
+        <!-- Секція для відображення контенту -->
         <div class="output-section">
             <iframe name="content-frame" src="/lab1/lab1.html" class="content-frame"></iframe>
         </div>
-        
     </div>
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
