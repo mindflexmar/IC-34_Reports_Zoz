@@ -1,8 +1,8 @@
-// Функція для зміни кнопок в залежності від вибраної лабораторної роботи
+
 function loadLab(labNumber) {
     let leftMenu = document.getElementById("left-menu");
 
-    // Вміст для різних лабораторних робіт
+ 
     let labs = {
         1: `
             <button><a href="/lab1/description.html" target="content-frame">Опис предметного середовища</a></button>
@@ -32,15 +32,15 @@ function loadLab(labNumber) {
         <button><a href="/lab2/class-selectors.html" target="content-frame">Гумова таблична верстка</a></button>
         <button><a href="/lab2/id-selectors.html" target="content-frame">Гумова блокова верстка</a></button>
         <button><a href="/lab2/tag-selectors.html" target="content-frame">ЗАВДАННЯ №3 FLEXBOX</a></button>
-            <button><a href="/lab2/class-selectors.html" target="content-frame">Скріншот сторінки (Flexbox)</a></button>
-            <button><a href="/lab2/id-selectors.html" target="content-frame">HTML-код (Flexbox)</a></button>
-            <button><a href="/lab2/conclusion.html" target="content-frame">CSS-код (Flexbox)</a></button>
+        <button><a href="/lab2/class-selectors.html" target="content-frame">Скріншот сторінки (Flexbox)</a></button>
+        <button><a href="/lab2/id-selectors.html" target="content-frame">HTML-код (Flexbox)</a></button>
+        <button><a href="/lab2/conclusion.html" target="content-frame">CSS-код (Flexbox)</a></button>
         <button><a href="/lab2/conclusion.html" target="content-frame">ВИСНОВКИ</a></button>
         `,
-        // Додайте аналогічні блоки для інших лабораторних робіт
+        
     };
 
-    // Оновлюємо ліве меню новим вмістом
+    
     if (labs[labNumber]) {
         leftMenu.innerHTML = labs[labNumber];
     }
