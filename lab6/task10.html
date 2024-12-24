@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання10</title>
+</head>
+<body>
+    <div>
+        <h1>Завданння10</h1>
+        <p>Напишіть функцію checkBrackets(str) яка приймає рядок жс коду (someFn)  і перевіряє правильність закриття дужок () {} []
+            Якщо рядок містить коректний код функція повертає true.
+            В іншому випадку повертає false
+           </p>
+    </div>
+    <img src="/imageslab6/Завдання6перевірка.png" alt="main">    
+    <img src="/imageslab6/Завдання6Результатперевірка.png" alt="main">
+    <img src="/imageslab6/Завдання6Неправильно.png" alt="main">
+    <img src="/imageslab6/Завдання6неправилнорезультат.png" alt="main">
+    <pre><code>
+        function checkBrackets(str) {
+            const stack = [];
+            const brackets = {
+                ')': '(',
+                '}': '{',
+                ']': '['
+            };
+        
+            for (const char of str) {
+                if (['(', '{', '['].includes(char)) {
+                    stack.push(char);
+                } else if ([')', '}', ']'].includes(char)) {
+                    if (stack.pop() !== brackets[char]) {
+                        return false;
+                    }
+                }
+            }
+        
+            return stack.length === 0;
+        }
+        
+        function checkCodeForBrackets() {
+            const codeInput = prompt("Введіть рядок JavaScript-коду для перевірки дужок:");
+        
+            if (codeInput !== null) {
+                const isValid = checkBrackets(codeInput);
+        
+                console.log(isValid
+                    ? "Код містить правильні дужки."
+                    : "Код містить помилки в дужках.");
+            } else {
+                console.log("Операція була скасована користувачем.");
+            }
+        }
+    </code></pre>
+</body>
+</html>

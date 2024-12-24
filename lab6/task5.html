@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання5</title>
+</head>
+<body>
+    <div>
+        <h1>Завданння5</h1>
+        <p>Напишіть функцію, яка приймає массив об'єктів і повертає новий массив </p>
+        <p>Зробіть знижку 20 % на всі фрукти у масиві Надайте ід для кожного продукту </p>
+        <pre><code>const fruits = [ { name: "apple", price: 200 },
+             { name: "orange", price: 300 },
+             { name: "grapes", price: 750 },
+             ];
+        </code></pre>
+    </div>
+    <img src="/imageslab6/Завдання3.png" alt="main"width="450" height="400">    
+    <pre><code>
+        const applyDiscountAndAssignID = (items) => {
+            return items.map((item, index) => ({
+              ...item,
+              price: item.price * 0.8, // Знижка 20%
+              id: index + 1,           // Генерація ID
+            }));
+          };
+          
+          const updatedFruits = applyDiscountAndAssignID(fruits);
+          console.log(updatedFruits);
+            </code></pre>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання9</title>
+</head>
+<body>
+    <div>
+        <h1>Завданння9</h1>
+        <p>Поверніть об'єкт, в якому вказано кількість тегів.</p>
+        <p>>Очікуваний результат <code>{js: 3, nodejs: 3, html: 2, css: 2, react: 2}</code></p>
+        <pre><code> const tweets = [
+            { id: "000", likes: 5, tags: ["js", "nodejs"] },
+            { id: "001", likes: 2, tags: ["html", "css"] },
+            { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+            { id: "003", likes: 8, tags: ["css", "react"] },
+            { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+            ];
+        
+        </code></pre>
+    </div>
+    <img src="/imageslab6/Завдання5.png" alt="main">    
+    <pre><code>
+        const countTags = (tweets) => {
+            return tweets
+              .flatMap(tweet => tweet.tags) 
+              .reduce((acc, tag) => {
+                acc[tag] = (acc[tag] || 0) + 1; 
+                return acc;
+              }, {});
+          };
+          
+    
+          const tagCounts = countTags(tweets);
+          console.log(tagCounts);
+            </code></pre>
+</body>
+</html>

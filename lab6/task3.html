@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання3</title>
+</head>
+<body>
+    <div>
+        <h1>Завданння3</h1>
+        <p>З об'єкту medicines потрібно отримати масив   в якому будуть лише назви препаратів.</p>
+        <p>З масиву  потрібно прибрати медикаменти , в яких строк зберігання  уже пройшов . </p>
+        <p> У новому масиві відсортувати медикаменти  у хронологічному порядку.</p>
+        <p> Результат вивести у консоль. <br>
+            Застосувати стрілочні функції</p>
+    
+    <pre><code>
+        const medicines = {
+            Агалгін: new Date("2022-05-01"),
+            Ношпа: new Date("2025-07-02"),
+            Альфахолін: new Date("2024-12-21"),
+            Аспірин: new Date("2022-08-15"),
+            Аспаркам: new Date("2024-04-18"),
+           };
+    </code></pre>
+    </div>
+    <img src="/imageslab6/Завдання2.png" alt="main"width="450" height="400">    
+    <pre><code>
+        const currentDate = new Date();
+
+
+        const result = Object.entries(medicines) 
+            .filter(([_, expiryDate]) => expiryDate > currentDate) 
+            .sort(([, dateA], [, dateB]) => dateA - dateB) 
+            .map(([name]) => name); 
+        
+        
+        console.log(result);
+        
+        
+            </code></pre>
+</body>
+</html>

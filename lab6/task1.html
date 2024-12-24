@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання1</title>
+</head>
+<body>
+    <div>
+        <h1>Завданння1</h1>
+        <p>Напишіть функцію <code>createProduct(obj, callback) </code>-приймає об'єкт товару без <code>id</code> а також коллбек.</p>
+        <p>Функція створює об'єкт товару, додаючи йому унікальний ідентифікатор у властивість <code>id</code> та викликає коллбек передаючи йому стоврений об'єкт.</p>
+        <p><code>logProduct(product)</code>-колббек що приймає об'єкт продукту і логуючий його в консоль</p>
+        <p><code>logTotalPrice(product)</code>-колббек, що приймає об'єкт продукту і логіює загальну вартість товару в консоль</p>
+    </div>
+    <img src="/imageslab6/Завдання1виклик.png" alt="main"width="450" height="400">    
+    <img src="/imageslab6/Завдання1заповнення.png" alt="header"width="450" height="350"> 
+    <img src="/imageslab6/Завдання1консоль.png" alt="main"width="450" height="400">    
+    <img src="/imageslab6/Завдання1сума.png" alt="footer"width="450" height="200">
+    <pre><code>
+        function createProduct(obj, callback) {
+            const product = { ...obj, id: Date.now() };
+            callback(product);
+        }
+        
+        function logProduct(product) {
+            console.log("Продукт:", product);
+            alert(`Продукт створено:\nНазва: ${product.name}\nЦіна: ${product.price}\nКількість: ${product.quantity}\nID: ${product.id}`);
+        }
+        
+        function logTotalPrice(product) {
+            const totalPrice = product.price * product.quantity;
+            console.log(`Загальна вартість товару "${product.name}": ${totalPrice}`);
+            alert(`Загальна вартість товару "${product.name}": ${totalPrice}`);
+        }
+        
+        
+            </code></pre>
+</body>
+</html>
