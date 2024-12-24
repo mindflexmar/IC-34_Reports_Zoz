@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання3</title>
+</head>
+<body>
+    <div>
+        <h1>Завданння3</h1>
+        <p>Кнопка "Приховати" ховає текст , виводячи зірочки замість введеної інформації, замінює назву кнопки на "Розкрити", при повторному натисканні текст знову стає доступним і кнопка набуває початкового вигляду.</p>
+     
+    </div>
+    <img src="/imageslab7/lab7Завдання2.png" alt="main">    
+    <img src="/imageslab7/lab7Завдання2приховано.png" alt="header"> 
+    <pre><code>
+        const inputField = document.getElementById('inputField');
+        const toggleButton = document.getElementById('toggleButton');
+        let isHidden = false;
+
+        
+        toggleButton.addEventListener('click', () => {
+            if (isHidden) {
+                inputField.type = 'text';
+                toggleButton.textContent = 'Приховати';
+            } else {
+                inputField.type = 'password';
+                toggleButton.textContent = 'Розкрити';
+            }
+            isHidden = !isHidden;
+        });
+            </code></pre>
+</body>
+</html>

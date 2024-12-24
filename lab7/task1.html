@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання1</title>
+</head>
+<body>
+    <div>
+        <h1>Завданння1</h1>
+        <p>Натискання на кнопку "SHOW ME" має виводити значення з поля введення у консолі.</p>
+    </div>
+    <img src="/imageslab7/lab7Завдання1.png" alt="main">    
+    <img src="/imageslab7/lab7Завдання1консоль.png" alt="header"> 
+    <pre><code>
+        const inputField = document.getElementById('inputField');
+        const showButton = document.getElementById('showButton');
+        showButton.addEventListener('click', () => {
+            console.log(inputField.value);
+        });
+        
+            </code></pre>
+</body>
+</html>

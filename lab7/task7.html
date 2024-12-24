@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання7</title>
+</head>
+<body>
+    <div>
+        <h1>Завданння7</h1>
+        <p>Напиши скрипт, який: </p>
+           <p> 1.	Порахує і виведе в консоль кількість категорій в ul#categories, тобто елементів li.item. </p>
+            
+           <p> 2.	Для кожного элемента li.item у списку ul#categories, знайде і виведе в консоль текст заголовку елемента (тегу &lt;h2&gt;) і кількість елементів в категорії (усіх &lt;li&gt;, вкладених в нього).
+            Для виконання цього завдання потрібно використати метод forEach() і властивості навігації по DOM.
+            </p>
+     
+    </div>
+    <img src="/imageslab7/lab7завдання7.png" alt="main">    
+    <img src="/imageslab7/lab7завдання7консоль.png" alt="header"> 
+    <pre><code>
+        const categoriesList = document.querySelectorAll('#categories .item');
+        console.log(`Number of categories: ${categoriesList.length}`);
+
+        categoriesList.forEach(category => {
+            const title = category.querySelector('h2').textContent;
+            const elementsCount = category.querySelectorAll('ul li').length;
+            console.log(`Category: ${title}`);
+            console.log(`Elements: ${elementsCount}`);
+        });
+    </code></pre>
+</body>
+</html>

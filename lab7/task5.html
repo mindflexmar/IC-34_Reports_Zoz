@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання5</title>
+</head>
+<body>
+    <div>
+        <h1>Завданння5</h1>
+        <p>Додайте слухач кліку на window і визначте чи клікнув користувач у div з id="place". Примітка: Якщо користувач клікнув на зеленому прямокутнику – у консолі виведе true. У протилежному випадку - false</p>
+     
+    </div>
+    <img src="/imageslab7/lab7Завдання5зелен.png" alt="main">    
+    <img src="/imageslab7/lab7Завдання5.png" alt="header"> 
+    <pre><code>
+            window.addEventListener('click', (event) => {
+                const isClickedOnDiv = event.target.id === 'place';
+                console.log(isClickedOnDiv);
+            });
+      
+    </code></pre>
+</body>
+</html>

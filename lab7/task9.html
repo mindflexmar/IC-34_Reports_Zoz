@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання9</title>
+</head>
+<body>
+    <div>
+        <h1>Завданння9</h1>
+        <img src="/imageslab7/завдання9.png" alt="header"> 
+     
+    </div>
+    <img src="/imageslab7/lab7завдання9.png" alt="main">    
+    <img src="/imageslab7/lab7завдання9змінено.png" alt="header"> 
+    <img src="/imageslab7/lab7завдання9синий.png" alt="header"> 
+    <pre><code>
+        function getRandomHexColor() {
+            return `#${Math.floor(Math.random() * 16777215)
+              .toString(16)
+              .padStart(6, 0)}`;
+        }
+    
+        document.querySelector('.change-color').addEventListener('click', function() {
+            const newColor = getRandomHexColor();
+            document.body.style.backgroundColor = newColor;
+            document.querySelector('.color').textContent = newColor;
+        });
+    </code></pre>
+</body>
+</html>
