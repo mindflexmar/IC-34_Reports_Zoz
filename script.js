@@ -41,6 +41,14 @@ function loadLab(labNumber) {
         <button><a href="/lab4/csscode.html" target="content-frame">CSS-код</a></button>
         <button><a href="/lab4/screen.html" target="content-frame">Вигляд версій</a></button>
         `,
+        5: `
+        <button><a href="/lab5/topic.html" target="content-frame">Тема ЛР №5</a></button>
+        <button><a href="/lab5/task1.html" target="content-frame">Завдання№1</a></button>
+        <button><a href="/lab5/task2.html" target="content-frame">Завдання№2</a></button>
+        <button><a href="/lab5/task3.html" target="content-frame">Завдання№3</a></button>
+        <button><a href="/lab5/task4.html" target="content-frame">Завдання№4</a></button>
+        <button><a href="/lab5/task5.html" target="content-frame">Завдання№5</a></button>
+        `,
 
         6: `
         <button><a href="/lab6/topic.html" target="content-frame">Тема ЛР №6</a></button>
