@@ -25,17 +25,15 @@ function loadLab(labNumber) {
             <button><a href="/lab2/conclusion.html" target="content-frame">ВИСНОВКИ до ЛР №2</a></button>
         `,
         3: `
-        <button><a href="/lab2/topic.html" target="content-frame">Тема Мета Місце розташування</a></button>
-        <button><a href="/lab2/styles.html" target="content-frame">ЗАВДАННЯ №1 Зовнішній вигляд макету. Код макету</a></button>
-        <button><a href="/lab2/selectors.html" target="content-frame">ЗАВДАННЯ №2</a></button>
-        <button><a href="/lab2/tag-selectors.html" target="content-frame">Фіксована таблична верстка</a></button>
-        <button><a href="/lab2/class-selectors.html" target="content-frame">Гумова таблична верстка</a></button>
-        <button><a href="/lab2/id-selectors.html" target="content-frame">Гумова блокова верстка</a></button>
-        <button><a href="/lab2/tag-selectors.html" target="content-frame">ЗАВДАННЯ №3 FLEXBOX</a></button>
-        <button><a href="/lab2/class-selectors.html" target="content-frame">Скріншот сторінки (Flexbox)</a></button>
-        <button><a href="/lab2/id-selectors.html" target="content-frame">HTML-код (Flexbox)</a></button>
-        <button><a href="/lab2/conclusion.html" target="content-frame">CSS-код (Flexbox)</a></button>
-        <button><a href="/lab2/conclusion.html" target="content-frame">ВИСНОВКИ</a></button>
+        <button><a href="/lab3/topic.html" target="content-frame">Тема Мета Місце розташування</a></button>
+        <button><a href="/lab3/task1.html" target="content-frame">ЗАВДАННЯ №1 Зовнішній вигляд макету. Код макету</a></button>
+        <button><a href="/lab3/task2.html" target="content-frame">ЗАВДАННЯ №2</a></button>
+        <button><a href="/lab3/gumtable.html" target="content-frame">Гумова таблична верстка</a></button>
+        <button><a href="/lab3/task3.html" target="content-frame">ЗАВДАННЯ №3 FLEXBOX</a></button>
+        <button><a href="/lab3/screen.html" target="content-frame">Скріншот сторінки (Flexbox)</a></button>
+        <button><a href="/lab3/htmlcode.html" target="content-frame">HTML-код (Flexbox)</a></button>
+        <button><a href="/lab3/csscode.html" target="content-frame">CSS-код (Flexbox)</a></button>
+        <button><a href="/lab3/conclusion.html" target="content-frame">ВИСНОВКИ</a></button>
         `,
 
         6: `
