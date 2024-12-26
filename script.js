@@ -68,7 +68,13 @@ function loadLab(labNumber) {
         <button><a href="/lab7/task8.html" target="content-frame">Завдання№8</a></button>
         <button><a href="/lab7/task9.html" target="content-frame">Завдання№9</a></button>
         <button><a href="/lab7/task10.html" target="content-frame">Завдання№10</a></button>
+        `,
+        8: `
+        <button><a href="/lab8/topic.html" target="content-frame">Тема ЛР №8</a></button>
+        <button><a href="/lab8/task1.html" target="content-frame">Завдання№1</a></button>
+        <button><a href="/lab8/task2.html" target="content-frame">Завдання№2</a></button>
         `
+
     };
 
     
