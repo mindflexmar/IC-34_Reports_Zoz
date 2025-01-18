@@ -16,12 +16,7 @@ function loadLab(labNumber) {
         2: `
             <button><a href="lab2/topic.html" target="content-frame">Тема, мета ЛР №2 Місце розташування сайту, звіту</a></button>
             <button><a href="lab2/styles.html" target="content-frame">Способи підключення стилів</a></button>
-            <button><a href="lab2/selectors.html" target="content-frame">СЕЛЕКТОРИ</a></button>
-            <button><a href="lab2/tag-selectors.html" target="content-frame">Селектори тегу</a></button>
             <button><a href="lab2/class-selectors.html" target="content-frame">Селектори класу</a></button>
-            <button><a href="lab2/id-selectors.html" target="content-frame">Селектори ідентифікаторів</a></button>
-            <button><a href="lab2/others-selectors.html" target="content-frame">Інші селектори</a></button>
-            <button><a href="lab2/css.html" target="content-frame">CSS: Шрифт Текст Таблиці Фон Контур Списки CSS Просунутий</a></button>
             <button><a href="lab2/conclusion.html" target="content-frame">ВИСНОВКИ до ЛР №2</a></button>
         `,
         3: `
@@ -55,7 +50,6 @@ function loadLab(labNumber) {
         <button><a href="lab6/task1.html" target="content-frame">Завдання№1</a></button>
         <button><a href="lab6/task3.html" target="content-frame">Завдання№3</a></button>
         <button><a href="lab6/task5.html" target="content-frame">Завдання№5</a></button>
-        <button><a href="lab6/task7.html" target="content-frame">Завдання№7</a></button>
         <button><a href="lab6/task9.html" target="content-frame">Завдання№9</a></button>
         <button><a href="lab6/task10.html" target="content-frame">Завдання№10</a></button>
         `,
